@@ -1,5 +1,5 @@
 Purpose: Contains over 50,000 lines of data, each line contains the time and the position of the 14 different players on the same team along the x-axis and y-axis at that time
 
-File setup: Time, player1_x, player1_y, player2_x, player_y, ...., player14_x, player14_y
+File setup: Time, player1_x, player1_y, player2_x, player2_y, ...., player14_x, player14_y
 
 *Due to confidentiality the actual data cannot be shared*
