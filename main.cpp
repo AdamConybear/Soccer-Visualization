@@ -182,7 +182,6 @@ int main(){
         endInput.drawTo(window);
         startInput.drawTo(window);
 
-        window.draw(playTime);
         if (start == 1){ //start vis
             if (pause == 0){ // continue game
                 if (count < timeEnd){
