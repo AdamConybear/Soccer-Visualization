@@ -248,17 +248,6 @@ int main(){
                     }
                 }
             }else{ //game is paused, stop everything where it is
-                if (ballx[count] >= 0){
-                    finalx = 400 + xscale*ballx[count];
-                }else if (ballx[count] < 0){
-                    finalx = 400 - xscale*(-1*ballx[count]);
-                }
-                if (bally[count] >= 0){
-                    finaly = 255 - yscale*bally[count];
-                }else if (bally[count] < 0){
-                    finaly = 255 + yscale*(-1*bally[count]);
-                }
-                showImage(window, players,ball,"images/ball.png",finaly,finalx);
                 playTime.setString(to_string(count));
                 for(int i = 0; i < 14; i++){
                     if (teamOnex[i][count] >= 0){
@@ -292,6 +281,17 @@ int main(){
                     }
 
                 }
+		if (ballx[count] >= 0){
+                    finalx = 400 + xscale*ballx[count];
+                }else if (ballx[count] < 0){
+                    finalx = 400 - xscale*(-1*ballx[count]);
+                }
+                if (bally[count] >= 0){
+                    finaly = 255 - yscale*bally[count];
+                }else if (bally[count] < 0){
+                    finaly = 255 + yscale*(-1*bally[count]);
+                }
+                showImage(window, players,ball,"images/ball.png",finaly,finalx);
 
             }
             if(count < 100){
